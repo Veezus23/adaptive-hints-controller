@@ -1,0 +1,2 @@
+# Optional software tests; the manual application uses only Python's standard library.
+pytest==9.1.1
