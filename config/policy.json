@@ -1,0 +1,15 @@
+{
+  "version": "evidence-ledger-policy-v1.1",
+  "total_prompt_cap": 6,
+  "information_prompt_cap": 3,
+  "instruction_prompt_cap": 2,
+  "verification_prompt_cap": 1,
+  "strategy_change_cap": 1,
+  "reserve_after_probe": {"instruction": 1, "verification": 1},
+  "post_instruction_failure_cap": 2,
+  "selection": "Deterministic ledger policy: first separate validated task findings from learner hypotheses; use an observed task error to justify relevant bounded assistance without asserting its cause.",
+  "priorities": ["departure_closed_pending", "context_gate", "full_performance", "reasoning_supported_gap", "discriminating_probe", "reasoning_or_review"],
+  "rationale": "Provisional engineering limits permit context plus two prerequisite checks, one targeted instruction and one fresh verification, with one evidence-justified strategy change when budget permits. No measured information gain, probabilities, expected utility or optimal-dose claim.",
+  "assistance_rule": "Delivered instructional content makes subsequent teaching-task responses assisted. Probe disclosures mark concept-specific assistance from their actual delivery onward. Unknown source assistance never becomes unassisted.",
+  "review_rule": "Raw events and superseded operator annotations remain append-only. Recompute effective evidence in temporal assistance partitions; pending categorization does not consume prompts."
+}
