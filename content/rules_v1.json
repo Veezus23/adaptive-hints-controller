@@ -1,0 +1,19 @@
+{
+  "version":"regrouping-evidence-rules-1",
+  "status":"authored deterministic qualitative rules; no calibrated diagnosis",
+  "hypotheses":["unit_identity_gap","hundred_tens_gap","combine_tens_gap","conservation_gap","application_gap","wording_mismatch","possible_slip","unknown_cause"],
+  "prerequisite_order":["unit_identity_gap","hundred_tens_gap","combine_tens_gap","conservation_gap","application_gap"],
+  "rules": {
+    "R_ZERO_UNIT":"Correct zero count/value gives limited evidence about nonzero place value; retain uncertainty and use a session-unseen nonzero item if inspection is needed.",
+    "R_AMBIGUOUS":"Ambiguous original digit/count wording or value/count responses support wording uncertainty only; no mathematical gap is inferred.",
+    "R_UNIT":"Explicit incompatible count/value on a clear unit probe supports unit difficulty; correct paired count/value challenges it with declared reasoning strength.",
+    "R_EQ":"Wrong explicit tens equivalence supports difficulty on that prerequisite; a correct relation challenges it, with bare success weaker than reasoned success.",
+    "R_COMBINE":"Wrong combining can support combine difficulty only after independent equivalence is demonstrated; otherwise retain unknown cause.",
+    "R_CONSERVE":"A complete explicit representation changing total value supports bookkeeping/conservation difficulty; partial answers do not establish it.",
+    "R_APPLY":"Incorrect full exchange after independently demonstrated prerequisites supports coordination difficulty; full unassisted correct exchange challenges it.",
+    "R_WORDING":"Improvement after explicit-unit restatement is evidence compatible with a wording mismatch, not certainty about cause.",
+    "R_SLIP":"An unassisted reasoned correction after neutral check can support a possible slip; distinct repeated coherent errors challenge that interpretation.",
+    "R_UNKNOWN":"Unknown cause always remains available; ambiguous/unparsed/mixed observations are inconclusive about specific mechanisms."
+  },
+  "assistance":"Every link preserves event assistance; engine additionally partitions concept-specific exposure and time. Assisted challenges cannot erase earlier unassisted supports."
+}
